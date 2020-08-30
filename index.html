@@ -1,0 +1,52 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Control Panel</title>
+</head>
+<body>
+    <div id="box">
+        <table border="0px">
+    <tr>
+        <td class="tab" id="one" onclick="clickTab(this.id)">Device 1</td>
+        <td class="tab" id="two" onclick="clickTab(this.id)">Device 2</td>
+        <td class="tab" id="three" onclick="clickTab(this.id)">Device 3</td>
+        <td class="tab" id="four" onclick="clickTab(this.id)">Device 4</td>
+        <td class="tab" id="five" onclick="clickTab(this.id)">Device 5</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="info">Auth Token BLYNK</td>
+        <td colspan="3" class="control"><input type="text" id="token" value=""></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="info">Состояние устройства</td>
+        <td colspan="3" class="control"><i></i></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="info">Сервопривод</td>
+        <td colspan="3" class="control"><input type="range" min="0" max="180" step="1" value="90" oninput="sizePic1()" id="size1"> </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="info">Лампочки</td>
+        <td class="control"><center><div class="indicator lamp" onclick="clickLamp(2)" id="lamp1"></div></center></td>
+        <td class="control"><center><div class="indicator lamp" onclick="clickLamp(3)" id="lamp2"></div></center></td>
+        <td class="control"><center><div class="indicator lamp" onclick="clickLamp(4)" id="lamp3"></div></center></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="info">Кнопка</td>
+        <td colspan="3" class="control"><center><div class="indicator" id="but"></div></center></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="info">Температура / Влажность</td>
+        <td colspan="3" class="control"><p></p></td>
+    </tr>
+    <tr>
+        <td colspan="2"><center>EasyCraft.by</center></td>
+        <td colspan="3"><center>A.S. Votinov</center></td>
+    </tr>
+</table>
+    </div> 
+    <script type="text/javascript" src="script.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+</body>
+</html>
